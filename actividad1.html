@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+
+	<style type="text/css">
+			#nav {
+			list-style:none inside;
+			margin:0;
+			padding:0;
+			text-align:center;
+			}
+
+		#nav li {
+			display:block;
+			position:relative;
+			float:left;
+			background: #144277; /* menu background color */
+			}
+
+		#nav li a {
+			display:block;
+			padding:0;
+			text-decoration:none;
+			width:200px; /* this is the width of the menu items */
+			line-height:35px; /* this is the hieght of the menu items */
+			color:#ffffff; /* list item font color */
+			}
+				
+		#nav li li a {font-size:80%;} /* smaller font size for sub menu items */
+			
+		#nav li:hover {background:#145277;} /* highlights current hovered list item and the parent list items when hovering over sub menues */
+
+
+
+		/*--- Sublist Styles ---*/
+		#nav ul {
+			position:absolute;
+			padding:0;
+			left:0;
+			display:none; /* hides sublists */
+			}
+
+		#nav li:hover ul ul {display:none;} /* hides sub-sublists */
+
+		#nav li:hover ul {display:block;} /* shows sublist on hover */
+
+		#nav li li:hover ul {
+			display:block; /* shows sub-sublist on hover */
+			margin-left:200px; /* this should be the same width as the parent list item */
+			margin-top:-35px; /* aligns top of sub menu with top of list item */
+			}
+			
+		*{
+			font-family:Arial;		
+		}
+
+		body{
+			width:100%;
+			height:100vh;
+			overflow:hidden;
+		}
+
+		section{
+			width:90%;
+			margin:auto;
+			font-size:12px;
+		}
+		
+		table{
+			width:100%;
+			
+			border-spacing:10px;
+			border-collapse:separate;
+		}
+
+		input[type="radio"]{
+			font-size:13px; 
+			text-align:justify;
+			line-height: 1.5em;
+		}
+
+		div#contenedor{
+			width: 35em;
+			overflow: hidden;
+			margin: 0 auto;
+			background-color: #000000;
+			padding: 0.5em;
+			color: #FFF;
+		}
+
+	</style>
+
+	<script>
+		var respuestaCorrecta = new Array("a2", "b2", "c1", "d2", "e1", "f4");
+		
+		function comprobarRadio(matriz){
+			var numeroRespuestasOK=0;
+			var numeroRespuestasKO=0;
+			var solucion = document.getElementById("solucion");
+			var tablaResultados ="<table border='1'>";
+			
+			for(j=0; j< matriz.length; j++){
+			var radios = document.getElementsByName(j+1);
+				for(i=0; i< radios.length;i++){
+					if (radios[i].checked){
+					var valor =  radios[i].value;
+						if(valor == matriz[j]) {
+						//tablaResultados+= "<tr><td>Respuesta correcta: </td>"+ "<td>"+ valor + "</td></tr>";
+						numeroRespuestasOK++;
+						break;
+						}else {
+						//tablaResultados+= "<tr><td>Respuesta incorrecta: </td><td>"+ valor + "</td></tr>";
+						numeroRespuestasKO++;
+						break;
+						}
+					}
+				}
+			}
+
+			var numeroRespuestasNulas=matriz.length - (numeroRespuestasOK + numeroRespuestasKO);
+			tablaResultados+="<tr><td>Resultado: </td><td>Respuestas correctas: "+numeroRespuestasOK+"<br/>Respuestas incorrectas: "+ numeroRespuestasKO+"<br/>Respuestas en blanco: "+ numeroRespuestasNulas+"</td></tr></table>";
+			solucion.innerHTML = tablaResultados;
+	}
+	</script>
+
+</head>
+<body>
+		<div id="header"> <!-- Contenedor del menú -->
+			<table class="subheader">
+				<tr>
+					<td class="col1">
+						<a href="https://www.unad.edu.co"><img src="img/unad.png" class="logo" alt="Universidad Nacional Abierta y a Distancia"></a>
+					</td>
+					<td class="col2">
+						<ul id="nav">
+						  <li><a href="index.html">Inicio</a></li>
+						  <li><a>Lecturas</a>
+							<ul>
+							  <li><a>GIT/GITHUB &raquo;</a>
+								<ul>
+								  <li><a href="lectura1.html#lectura1">CVS</a></li>
+								  <li><a href="lectura1.html#lectura2">GIT</a></li>
+								  <li><a href="lectura1.html#lectura3">GITHUB</a></li>
+								</ul>
+							  </li>
+							  <li><a>HTML &raquo;</a>
+								<ul>
+								  <li><a href="#">Lectura 1</a></li>
+								  <li><a href="#">Lectura 2</a></li>
+								</ul>
+							  </li>
+							  <li><a>CSS&raquo;</a>
+								<ul>
+								  <li><a href="#">Lectura 1</a></li>
+								  <li><a href="#">Lectura 2</a></li>
+								</ul>
+							  </li>								  
+							</ul>
+						  </li>
+						  <li><a>Multimedia </a>
+							<ul>
+							<li><a href="#">GIT/GITHUB</a></li>
+							<li><a href="#">HTML</a></li>
+							<li><a href="#">CSS</a></li>									
+							</ul>
+						  </li>
+						  <li><a href="autor.html">Autor </a></li>
+						  <li><a>Actividades </a>
+							<ul>
+							<li><a href="actividad1.html">Actividad 1</a></li>
+							<li><a href="#">Actividad 2</a></li>							
+							</ul>
+						  </li>						  
+						</ul>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<section>
+			<div class="container">
+				<div class="row">
+				<br><br>
+					<table>
+						<thead>
+							<th colspan="2" style="width:70%; background-color:rgba(165,70,134,1);"><h2>Programacion Orientada a Objetos</h2></th>
+							<th style="width:30%; background-color:rgba(165,70,134,.3);"><h4>Actividad 1</h4></th>
+						</thead>
+
+						<tr>
+							<td>
+								<label for="p1">1. ¿Que comando de GIT descarga el repositorio a la computadora?</label><br><br>
+								a. git push <br>
+								b. git clone <br>
+								c. git fork <br>								
+
+								<br>
+								<label for="p2">2. ¿Que es control de versiones?</label><br><br>
+								a. Es programa para el diseño de paginas Web<br>
+								b. Es la gestion de los diversos cambios que se realizan sobre los elementos de algun producto <br>
+								c. Es una tecnica para la concentracion al momento de realizar diseño Web. <br>
+								
+								<br>
+								<label for="p3">3. Es un sistema de control de versiones</label><br><br>
+								a. Bazaar <br>
+								b. Rec <br>
+								c. Foo <br>
+								d. submercurial <br>			
+							</td>
+
+							<td>
+								<label for="p4">4. ¿Que es un sistema de control de versiones local?</label><br><br>
+								a. Existe un servidor central con el proyecto <br>
+								b. Guarda una copia de los archivos actuales con una estampa de la fecha y hora actuales <br>
+								c. Existe una copia del proyecto en un servidor central y en cada equipo colaborador del proyecto <br>
+
+								<br>
+								<label for="p5">5. Que es GIT?</label><br><br>
+								a. Es un sistema de control de versiones distribuido, en donde vamos a poder controlar todos los cambios que se hacen en nuestra aplicación<br>
+								b. Es un directorio donde se guardan codigos anteriores<br>
+								c. Es una herramienta que permite agilizar la programacion Web <br>
+								d. Es un equipo de computo usado para guardar versiones de proyectos <br>
+
+								<br>
+								<label for="p6">6. ¿Que es un repositorio?</label><br><br>
+								a. Es un sistema de gestión de proyectos y control de versiones de código<br>
+								b. Una de las herramientas de control de versiones más populares <br>
+								c. Es el estado en el que se encuentra un proyecto en un momento dado de su desarrollo o modificación <br>
+								d. Es un directorio donde se almacenan los archivos de tu proyecto <br>
+							</td>
+
+							<td>
+								<h1>Opciones de Respuesta:</h1>
+								<table style="float:left; border:1px; border-style:solid; border-color:gray">
+									<tr>
+										<td style="font-weight: 700;">1.</td>
+										<td>a&nbsp;<input type="radio" value="a1" name="1" /></td>
+										<td>b&nbsp;<input type="radio" value="a2" name="1"/></td>
+										<td>c&nbsp;<input type="radio" value="a3" name="1" /></td>
+								 	</tr> 
+								 	
+								 	<tr>
+								 		<td style="font-weight: 700;">2.</td>
+										<td>a&nbsp;<input type="radio" value="b1" name="2" /></td>
+										<td>b&nbsp;<input type="radio" value="b2" name="2"/></td>
+										<td>c&nbsp;<input type="radio" value="b3" name="2"/></td>
+								 	</tr> 
+								 	
+								 	<tr>
+								 		<td style="font-weight: 700;">3.</td>
+										<td>a&nbsp;<input type="radio" value="c1" name="3" /></td>
+										<td>b&nbsp;<input type="radio" value="c2" name="3"/></td>
+										<td>c&nbsp;<input type="radio" value="c3" name="3" /></td>
+										<td>d&nbsp;<input type="radio" value="c4" name="3" /></td>
+								 	</tr> 
+								 	
+								 	<tr>
+								 		<td style="font-weight: 700;">4.</td>
+										<td>a&nbsp;<input type="radio" value="d1" name="4" /></td>
+										<td>b&nbsp;<input type="radio" value="d2" name="4"/></td>
+										<td>c&nbsp;<input type="radio" value="d3" name="4"/></td>
+								 	</tr> 
+								 	
+								 	<tr>
+								 		<td style="font-weight: 700;">5.</td>
+										<td>a&nbsp;<input type="radio" value="e1" name="5" /></td>
+										<td>b&nbsp;<input type="radio" value="e2" name="5"/></td>
+										<td>c&nbsp;<input type="radio" value="e3" name="5" /></td>
+										<td>d&nbsp;<input type="radio" value="e4" name="5" /></td>
+								 	</tr>
+
+								 	<tr>
+								 		<td style="font-weight: 700;">6.</td>
+										<td>a&nbsp;<input type="radio" value="f1" name="6" /></td>
+										<td>b&nbsp;<input type="radio" value="f2" name="6"/></td>
+										<td>c&nbsp;<input type="radio" value="f3" name="6" /></td>
+										<td>d&nbsp;<input type="radio" value="f4" name="6" /></td>
+								 	</tr>
+
+								 	<tr>
+								 		<td colspan="2">
+								 			<input type="button" value="Corregir" onclick="comprobarRadio(respuestaCorrecta)"/>
+								 		</td>
+								 	</tr>
+								</table>
+								
+									<div id="solucion"></div>
+								</div>
+							</td>
+						</tr>
+
+					</table>				
+				</div>
+			</div>
+
+		</section>
+
+</body>
+</html>

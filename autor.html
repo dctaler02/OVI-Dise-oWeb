@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-	<title>OVI - Diseño Web </title>
+	<meta charset="UTF-8">
+	<title>Información del Autor</title>
 
 	<meta charset="UTF-8">
 	
@@ -13,7 +14,6 @@
 	<!-- Etiqueta visualización viewport -->
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 
-	<!-- Estilos -->
 		<style type="text/css">
 		*{
 			margin:0;
@@ -324,12 +324,48 @@
 			zoom:1.1;
 			cursor:pointer;
 		}
+		p {
+			display: block;
+			margin-top: 1em;
+			margin-bottom: 1em;
+			margin-left: 180px;
+			margin-right: 180px;
+		}
+				.meAndme{
+			width:80%;
+			margin:auto;
+			padding-top:50px;
+			border-collapse: separate;
+			border-spacing: 15px;
+		}
+
+		.meAndme th, td{
+			text-align: left;
+			padding: 8px;
+		}
+
+		.meAndme tr:nth-child(even){
+			background-color: #f2f2f2;
+		}
+
+		.miOtroYO{
+			width:200px;
+			height:auto;
+			text-align:center;
+			margin:0 auto;
+			border-radius: 10px 10px 10px 10px;
+			-moz-border-radius: 10px 10px 10px 10px;
+			-webkit-border-radius: 10px 10px 10px 10px;
+			border: 6px solid #1d057d;
+			-webkit-box-shadow: -7px 10px 5px 0px rgba(0,0,0,0.75);
+			-moz-box-shadow: -7px 10px 5px 0px rgba(0,0,0,0.75);
+			box-shadow: -7px 10px 5px 0px rgba(0,0,0,0.75);
+		}
+
 	</style>
-	
-	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+</head>
 <body>
 
-	<!-- Contenedor principal -->
 	<main>
 		<div id="header"> <!-- Contenedor del menú -->
 			<table class="subheader">
@@ -349,13 +385,13 @@
 								  <li><a href="lectura1.html#lectura3">GITHUB</a></li>
 								</ul>
 							  </li>
-							  <li><a href="#">HTML &raquo;</a>
+							  <li><a>HTML &raquo;</a>
 								<ul>
 								  <li><a href="#">Lectura 1</a></li>
 								  <li><a href="#">Lectura 2</a></li>
 								</ul>
 							  </li>
-							  <li><a href="#">CSS&raquo;</a>
+							  <li><a>CSS&raquo;</a>
 								<ul>
 								  <li><a href="#">Lectura 1</a></li>
 								  <li><a href="#">Lectura 2</a></li>
@@ -363,7 +399,7 @@
 							  </li>								  
 							</ul>
 						  </li>
-						  <li><a href="#">Multimedia </a>
+						  <li><a>Multimedia </a>
 							<ul>
 							<li><a href="#">GIT/GITHUB</a></li>
 							<li><a href="#">HTML</a></li>
@@ -371,10 +407,10 @@
 							</ul>
 						  </li>
 						  <li><a href="autor.html">Autor </a></li>
-						  <li><a href="#">Actividades </a>
+						  <li><a>Actividades </a>
 							<ul>
-							<li><a href="#">Actividad 1</a></li>
-							<li><a href="#l">Actividad 2</a></li>							
+							<li><a href="actividad1.html">Actividad 1</a></li>
+							<li><a href="#">Actividad 2</a></li>							
 							</ul>
 						  </li>						  
 						</ul>
@@ -383,132 +419,44 @@
 			</table>
 		</div>
 
-		<!-- Banner inicial -->
-		<section id="inicio"></section>
+		<section id="lmmr"></section>
 
-		<!-- Sección que contiene la información general del curso -->
-		<section id="info">
-			<div class="container">
-			<br>
-			<br>
-			<h2>
-			Estimado (a)  visitante, bienvenido al Objeto Virtual de Información O.V.I. sobre los elementos básicos en el diseño web tales como la gestión de proyectos colaborativos y los lenguajes HTML5 y CSS3, diseñado por Diana Carolina Talero. En este material encontrará contenidos de lectura y contenidos multimedia que le ayudaran en el desarrollo de las actividades académicas relacionadas con el tema.
-			</h2>
-			</div>
-			<br>
-			<br>
-			<div class="container">
-				<div class="row" style="padding-top:40px; padding-bottom:40px;">
-					<table class="info">
-						<tr>
-							<td><h2>Información General</h2></td>
-
-							<td></td>
-
-							<td><h2>Objetivos</h2></td>
-						</tr>
-
-						<tr>
-							<td style="width:45%;">
-								<table class="side" cellpadding="10" style="width:100%; background-color:rgba(255,218,0,1);">
-									<tr>
-										<td><strong>Código:</strong></td>
-										<td>301122</td>
-									</tr>
-
-									<tr>
-										<td><strong>Curso:</strong></td>
-										<td>Diseño de Sitios Web</td>
-									</tr>
-
-									<tr>
-										<td><strong>Programa:</strong></td>
-										<td>Ingeniería de Sistemas </td>
-									</tr>
-
-									<tr>
-										<td><strong>Temática:</strong></td>
-										<td>GIT/GITHUB, HTML5 y CSS3</td>
-									</tr>
-
-									<tr>
-										<td><strong>Descripción:</strong></td>
-										<td>
-											<p>Introducción, profundización e información complementaria sobre el uso de GIT y GITHUB para gestionar proyectos colaborativos de diseño web, HTML5 y CSS3 para creación  de contenidos en formato web (Paginas y Sitios Web)</p>
-										</td>
-									</tr>
-								</table>
-							</td>
-
-							<td style="width:10%;"></td>
-
-							<td style="width:45%;">
-								<table class="side" style="width:100%; background-color:rgba(255,218,0,1);">
-									<tr>
-										<td>
-											<li>Describir los elementos básicos para el diseño web</li>
-										</td>
-									</tr>
-
-									<tr>
-										<td>
-											<li>Explicar el uso básico de GIT y GITHUB en la gestión de proyectos de diseño web</li>
-										</td>
-									</tr>
-
-									<tr>
-										<td>
-											<li>Mostrar los elementos básicos del lenguaje HTML5 como herramienta para estructurar y presentar el contenido para la web</li>
-										</td>
-									</tr>
-
-									<tr>
-										<td>
-											<li>Mostrar las propiedades básicas del lenguaje CSS3 para definir la presentación de un documento estructurado escrito en HTML5</li>
-										</td>
-									</tr>
-								</table>
-							</td>
-						</tr>
-					</table>
-				</div>
-			</div>
-		</section>
-
-		
-		<section id="tematica">
+		<section id="">
+		<br><br><br><br><br>
 			<div class="container">
 				<div class="row">
-					<h1>¿Que encontraras en este O.V.I?</h1>
-					<br>
+					<table class="meAndme">
+						<tr>
+							<td rowspan="6" style="width:300px"><img src="img/autor.png" class="miOtroYO"></td>
+						</tr>
+
+						<tr>
+							<td>Autor:</td>
+							<td>Diana Carolina Talero</td>
+						</tr>
+
+						<tr>
+							<td>Código:</td>
+							<td>53063130</td>
+						</tr>
+
+						<tr>
+							<td>Programa:</td>
+							<td>Ingeniería de Sistemas</td>
+						</tr>
+
+						<tr>
+							<td>Correo:</td>
+							<td> dctaleros@unadvirtual.edu.co</td> 
+						</tr>
+
+						<tr>
+							<td>Skype:</td>
+							<td>dctaler02@gmail.com</td>
+						</tr>
+					</table>					
 				</div>
-				
-				<br>
-
-				<div class="fila" id="contenedor">
-					<figure>
-						<div id="titulo1"><h3> GIT y GITHUB</h3></div>
-						<img src="img/github.png" alt="diagramando" width="364" height="288">
-						<figcaption><p>Dar una breve introducción a la gestión de proyectos colaborativos alojados en GITHUB mediante el manejo de versiones con GIT. </p></figcaption>
-					</figure>
-
-
-					<figure>
-						<div id="titulo2"><h3>HTML5 - Estructura y contenido de una página Web</h3></div>
-						<img src="img/html5.png" alt="diagramando" width="364" height="288">
-						<figcaption><p>Mostrar los elementos básicos del lenguaje estructurado HTML5 .</p></figcaption>
-					</figure>
-					
-					
-					<figure>
-						<div id="titulo3"><h3>CSS3 - Estilo de una pagina web</h3></div>
-						<img src="img/css.png" alt="diagramando" width="364" height="288">
-						<figcaption><p>Mostrar los elementos básicos del lenguaje CSS3 para la presentación del documento HTML5 .</p></figcaption>
-					</figure>
-				</div>
-
-				<br><br><br>
-			</div>
+			</div>					
 		</section>
 
 		<!-- Pie de página -->
@@ -519,7 +467,7 @@
 						<table class="block">
 							<tr>
 								<td colspan="2">
-									<small>Diseño y Creación: <a href="autor.html">Diana Carolina Talero</a> &#174;</small>
+									<small>Diseño y Creación: <a href="autor.html">Diana Talero</a> &#174;</small>
 									<br>
 								<td>
 							</tr>
@@ -533,13 +481,13 @@
 							<tr>
 								<td>Eres el visitante No.</td>
 							</tr>
-							
+
 							<tr>
 								<td>
-							<!-- Contador de visitas -->
-							<center><a href="http://www.websmultimedia.com/contador-de-visitas-gratis" title="Contador De Visitas Gratis">
-							<img style="border: 0px solid; display: inline;" alt="contador de visitas" src="http://www.websmultimedia.com/contador-de-visitas.php?id=260897"></a><br><a href='http://www.websmultimedia.com/contador-de-visitas-gratis'></a><br><a href='http://www.websmultimedia.com'></a></center>
-							<!-- Fin Contador de visitas -->
+		<!-- Contador de visitas -->
+		<center><a href="http://www.websmultimedia.com/contador-de-visitas-gratis" title="Contador De Visitas Gratis">
+		<img style="border: 0px solid; display: inline;" alt="contador de visitas" src="http://www.websmultimedia.com/contador-de-visitas.php?id=260897"></a><br><a href='http://www.websmultimedia.com/contador-de-visitas-gratis'></a><br><a href='http://www.websmultimedia.com'></a></center>
+		<!-- Fin Contador de visitas -->
 								</td>
 							</tr>
 
@@ -556,17 +504,8 @@
 			</div>
 		</footer>
 	</main>
-	
-	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
-	<script type="text/javascript">
-		//Hacemos la Function para abrir el contador de visitas
-		function recargar_views(){
-			$(".views").load("contador.txt");
-		}
 
-		// Establecemos el temporizador a 1 segundos
-		timer = setInterval("recargar_views()", 1000);
-	</script>
-	
+	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+
 </body>
 </html>
