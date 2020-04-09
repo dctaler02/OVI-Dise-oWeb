@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-	<title>OVI - Diseño Web </title>
-
+	<title>Material de Lectura</title>
 	<meta charset="UTF-8">
 	
 	<!-- Etiquetas SEO -->
@@ -13,7 +12,7 @@
 	<!-- Etiqueta visualización viewport -->
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 
-	<!-- Estilos -->
+
 		<style type="text/css">
 		*{
 			margin:0;
@@ -324,12 +323,17 @@
 			zoom:1.1;
 			cursor:pointer;
 		}
+		p {
+			display: block;
+			margin-top: 1em;
+			margin-bottom: 1em;
+			margin-left: 180px;
+			margin-right: 180px;
+}
 	</style>
-	
-	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+</head>
 <body>
 
-	<!-- Contenedor principal -->
 	<main>
 		<div id="header"> <!-- Contenedor del menú -->
 			<table class="subheader">
@@ -364,7 +368,7 @@
 							  </li>								  
 							</ul>
 						  </li>
-						  <li><a href="#">Multimedia </a>
+						  <li><a>Multimedia </a>
 							<ul>
 							<li><a href="#">GIT/GITHUB</a></li>
 							<li><a href="#">HTML</a></li>
@@ -375,7 +379,7 @@
 						  <li><a>Actividades </a>
 							<ul>
 							<li><a href="actividad1.html">Actividad 1</a></li>
-							<li><a href="#l">Actividad 2</a></li>							
+							<li><a href="#">Actividad 2</a></li>							
 							</ul>
 						  </li>						  
 						</ul>
@@ -384,133 +388,77 @@
 			</table>
 		</div>
 
-		<!-- Banner inicial -->
-		<section id="inicio"></section>
+		<section id="presentacion"></section>
+		<section id="lectura1">
+			<div class="contenedor">
+					<br><br><br><br><br>
+					<p style="text-align: center;"><strong>&iquest;QUE ES CSS?</strong></p>
+					<p>&nbsp;</p>
+					<p style="text-align: justify;">El nombre hojas de estilo en cascada viene del inglés Cascading Style Sheets, del que toma sus siglas. CSS es un lenguaje usado para definir la presentación de un documento estructurado escrito en HTML o XML (y por extensión en XHTML). El W3C(World Wide Web Consortium) es el encargado de formular la especificación de las hojas de estilo que servirán de estándar para los agentes de usuario o navegadores.</p>
+					<p style="text-align: justify;">La idea que se encuentra detrás del desarrollo de CSS es separar la estructura de un documento de su presentación. La información de estilo puede ser adjuntada como un documento separado o en el mismo documento HTML. En este último caso podrían definirse estilos generales en la cabecera del documento o en cada etiqueta particular mediante el atributo "&lt;style&gt;".</p>
+					<center><img src = "img/htmlcss.png"></center>
+					<p style="text-align: left;"><strong>Características principales de CSS3</strong></p>
 
-		<!-- Sección que contiene la información general del curso -->
-		<section id="info">
-			<div class="container">
-			<br>
-			<br>
-			<h2>
-			Estimado (a)  visitante, bienvenido al Objeto Virtual de Información O.V.I. sobre los elementos básicos en el diseño web tales como la gestión de proyectos colaborativos y los lenguajes HTML5 y CSS3, diseñado por Diana Carolina Talero. En este material encontrará contenidos de lectura y contenidos multimedia que le ayudaran en el desarrollo de las actividades académicas relacionadas con el tema.
-			</h2>
-			</div>
-			<br>
-			<br>
-			<div class="container">
-				<div class="row" style="padding-top:40px; padding-bottom:40px;">
-					<table class="info">
-						<tr>
-							<td><h2>Información General</h2></td>
+					<p style="text-align: justify;"><strong>Atributo gradiente de colores en borde con CSS:</strong> Posibilidad de definir el un gradiente de color en el borde de los elementos con CSS, en un atributo no estándar de Firefox.</p>
 
-							<td></td>
+					<p style="text-align: justify;"><strong>Bordes redondeados en CSS 3:</strong> Las características de CSS 3 incluyen bordes redondeados, a través del atributo border-radius, que define la curvatura que debe tener el borde del elemento.</p>
+					
+					<p style="text-align: justify;"><strong>Múltiples imágenes de fondo con CSS:</strong> Cómo conseguir que un elemento de la página tenga varias imágenes de fondo a la vez, con CSS básico y con características de CSS 3.</p>
+					
+					<p style="text-align: justify;"><strong>Colores RGBA en CSS 3:</strong> Veremos qué son los colores RGBA y su notación, que se incluyen en la especificación de Hojas de Estilo en Cascada CSS 3.</p>
+					
+					<p style="text-align: justify;"><strong>Word-wrap en CSS 3:</strong> Una propiedad de CSS 3 que sirve para romper las palabras que son demasiado largas y no caben enteras por la anchura de una caja.</p>
+					
+					<p style="text-align: justify;"><strong>Textos multi-columna con CSS 3:</strong> CSS 3 incorpora nuevos atributos para que el navegador se encargue de producir texto multicolumna, es decir, que maquete directamente el texto en varias columnas sin tener que hacer nosotros nada.</p>
+					
+					<p style="text-align: justify;"><strong>Textos multi-columna con CSS 3:</strong> CSS 3 incorpora nuevos atributos para que el navegador se encargue de producir texto multicolumna, es decir, que maquete directamente el texto en varias columnas sin tener que hacer nosotros nada.</p>
+					
+					<p style="text-align: justify;"><strong>Sombras en CSS 3 con box-shadow:</strong> Crear sombras en CSS3 con el atributo box-shadow. Por fin podremos aplicar sombras a los elementos de la página, sin usar imágenes, Javascript ni nada extra, simplemente con un atributo de CSS 3.</p>
+					
+					<p style="text-align: justify;"><strong>Resplandor exterior con CSS3:</strong> Cómo realizar un elemento que tenga un resplandor exterior con CSS3 y la propiedad box-shadow.</p>
+					
+					<p style="text-align: justify;"><strong>Propiedad background-origin de CSS 3:</strong> La propiedad de CSS 3 background-origin permite decidir la posición de la imagen de fondo con respecto al borde, padding o el contenido del elemento.</p>
+					
+					<p style="text-align: justify;"><strong>Atributos CSS3 overflow-x y overflow-y:</strong> Descripción de los atributos de CSS3 overflow-x y overflow-y, que sirven para definir cómo renderizar un contenido cuando sobrepasa los límites de un contenedor en la horizontal o vertical.</p>
+					
+					<p style="text-align: justify;"><strong>Introducción a @font-face de CSS:</strong> Fuentes en CSS 3. Sintaxis y principales características de la regla CSS @font-face, que nos permite utilizar cualquier tipografía en una página web.</p>
 
-							<td><h2>Objetivos</h2></td>
-						</tr>
+					<p style="text-align: justify;"><strong>Sombras en el texto con text-shadow de CSS:</strong> Cómo aplicar sombras y otros efectos en los textos con CSS y el atributo text-shadow.</p>
 
-						<tr>
-							<td style="width:45%;">
-								<table class="side" cellpadding="10" style="width:100%; background-color:rgba(255,218,0,1);">
-									<tr>
-										<td><strong>Código:</strong></td>
-										<td>301122</td>
-									</tr>
 
-									<tr>
-										<td><strong>Curso:</strong></td>
-										<td>Diseño de Sitios Web</td>
-									</tr>
+					<p style="text-align: justify;"> </p>
+					<center><img src = "img/workcss.jpg"></center>
+					<br>			
 
-									<tr>
-										<td><strong>Programa:</strong></td>
-										<td>Ingeniería de Sistemas </td>
-									</tr>
-
-									<tr>
-										<td><strong>Temática:</strong></td>
-										<td>GIT/GITHUB, HTML5 y CSS3</td>
-									</tr>
-
-									<tr>
-										<td><strong>Descripción:</strong></td>
-										<td>
-											<p>Introducción, profundización e información complementaria sobre el uso de GIT y GITHUB para gestionar proyectos colaborativos de diseño web, HTML5 y CSS3 para creación  de contenidos en formato web (Paginas y Sitios Web)</p>
-										</td>
-									</tr>
-								</table>
-							</td>
-
-							<td style="width:10%;"></td>
-
-							<td style="width:45%;">
-								<table class="side" style="width:100%; background-color:rgba(255,218,0,1);">
-									<tr>
-										<td>
-											<li>Describir los elementos básicos para el diseño web</li>
-										</td>
-									</tr>
-
-									<tr>
-										<td>
-											<li>Explicar el uso básico de GIT y GITHUB en la gestión de proyectos de diseño web</li>
-										</td>
-									</tr>
-
-									<tr>
-										<td>
-											<li>Mostrar los elementos básicos del lenguaje HTML5 como herramienta para estructurar y presentar el contenido para la web</li>
-										</td>
-									</tr>
-
-									<tr>
-										<td>
-											<li>Mostrar las propiedades básicas del lenguaje CSS3 para definir la presentación de un documento estructurado escrito en HTML5</li>
-										</td>
-									</tr>
-								</table>
-							</td>
-						</tr>
-					</table>
-				</div>
 			</div>
 		</section>
-
-		
-		<section id="tematica">
-			<div class="container">
-				<div class="row">
-					<h1>¿Que encontraras en este O.V.I?</h1>
-					<br>
-				</div>
+		<section id="lectura2"
+			<div class="contenedor">
+				<br><br><br><br><br>
+				<p style="text-align: center;"><strong>Ventajas y Desventajas</strong></p>
 				
+				<p style="text-align: left;"><strong>Ventajas</strong></p>
+				<p style="text-align: left;">	- Se obtiene un mayor control de la presentación del sitio al poder tener todo el código CSS reunido en uno, lo que facilita su modificación.</p>
+				<p style="text-align: left;">	- Al poder elegir el archivo CSS que deseamos mostrar, puede aumentar la accesibilidad ya que podemos asignarle un código CSS concreto a personas con deficiencias visuales, por ejemplo. Esto lo detecta el navegador web.</p>
+				<p style="text-align: left;">	- Conseguimos hacer mucho más legible el código HTML al tener el código CSS aparte (Siempre que no usemos estilos en línea, claro está). </p>
+				<p style="text-align: left;">	- Pueden mostrarse distintas hojas de estilo según el dispositivo que estemos utilizando (versión impresa, versión móvil, leída por un sintetizador de voz…) o dejar que el usuario elija. </p>
+				<p style="text-align: left;">	- Gracias a la técnica CSS Sprites podemos aligerar la carga de nuestro sitio al juntar todas las imágenes en una. </p>
+				<p style="text-align: left;">	- Las novedades de CSS3 nos permiten ahorrarnos tiempo y trabajo al poder seguir varias técnicas (bordes redondeados, sombra en el texto, sombra en las cajas, etc.) sin necesidad de usar un editor gráfico. </p>
+				
+				<p style="text-align: left;"><strong>Desventajas</strong></p>
+				<p style="text-align: left;">	- Existen limitaciones que CSS 2.x todavía no permite, por ejemplo, la alineación vertical de capas, las sombras, los bordes redondeados. </p>
+				<p style="text-align: left;">	- El uso de las tablas nos permitía crear diseños complejos de forma mucho más sencilla que utilizando CSS, aunque CSS3 está intentando facilitar dicho trabajo.</p>
+				<p style="text-align: left;">	- A veces, dependiendo del navegador (Acid tests), la página que ha sido maquetada con CSS puede verse distinta (Aunque, si hemos seguido los estándares web de forma correcta, el problema es del navegador). </p>
+
 				<br>
-
-				<div class="fila" id="contenedor">
-					<figure>
-						<div id="titulo1"><h3> GIT y GITHUB</h3></div>
-						<img src="img/github.png" alt="diagramando" width="364" height="288">
-						<figcaption><p>Dar una breve introducción a la gestión de proyectos colaborativos alojados en GITHUB mediante el manejo de versiones con GIT. </p></figcaption>
-					</figure>
-
-
-					<figure>
-						<div id="titulo2"><h3>HTML5 - Estructura y contenido de una página Web</h3></div>
-						<img src="img/html5.png" alt="diagramando" width="364" height="288">
-						<figcaption><p>Mostrar los elementos básicos del lenguaje estructurado HTML5 .</p></figcaption>
-					</figure>
-					
-					
-					<figure>
-						<div id="titulo3"><h3>CSS3 - Estilo de una pagina web</h3></div>
-						<img src="img/css.png" alt="diagramando" width="364" height="288">
-						<figcaption><p>Mostrar los elementos básicos del lenguaje CSS3 para la presentación del documento HTML5 .</p></figcaption>
-					</figure>
-				</div>
-
-				<br><br><br>
+				
 			</div>
 		</section>
+
+		<p>Referencias</p>
+		<br>
+		<p></p>
+		
 
 		<!-- Pie de página -->
 		<footer>
@@ -524,26 +472,22 @@
 									<br>
 								<td>
 							</tr>
+														      
 							<tr>
 								<td>
 									<img src="img/commons.png" alt="license" style="width:100px; height:auto;">
-									<br>
+									<br><br>
 								</td>
 							</tr>
 
 							<tr>
 								<td>Eres el visitante No.</td>
-							</tr>
-							
-							<tr>
-								<td>
+							</tr> 
+							<tr><td>									
 							<!-- Contador de visitas -->
 							<center><a href="http://www.websmultimedia.com/contador-de-visitas-gratis" title="Contador De Visitas Gratis">
 							<img style="border: 0px solid; display: inline;" alt="contador de visitas" src="http://www.websmultimedia.com/contador-de-visitas.php?id=260897"></a><br><a href='http://www.websmultimedia.com/contador-de-visitas-gratis'></a><br><a href='http://www.websmultimedia.com'></a></center>
-							<!-- Fin Contador de visitas -->
-								</td>
-							</tr>
-
+							<!-- Fin Contador de visitas --></td></tr>
 							<tr>
 								<td><img src="img/sellos_calidad.png" alt="Calidad" style="width:65%; height:auto;"></td>
 							</tr>
@@ -559,15 +503,6 @@
 	</main>
 	
 	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
-	<script type="text/javascript">
-		//Hacemos la Function para abrir el contador de visitas
-		function recargar_views(){
-			$(".views").load("contador.txt");
-		}
-
-		// Establecemos el temporizador a 1 segundos
-		timer = setInterval("recargar_views()", 1000);
-	</script>
 	
 </body>
 </html>

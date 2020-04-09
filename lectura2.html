@@ -355,14 +355,15 @@
 							  </li>
 							  <li><a>HTML &raquo;</a>
 								<ul>
-								  <li><a href="#">Lectura 1</a></li>
-								  <li><a href="#">Lectura 2</a></li>
+								  <li><a href="lectura2.html#lectura1">¿Que es?</a></li>
+								  <li><a href="lectura2.html#lectura2">HTML5</a></li>
+								  <li><a href="lectura2.html#lectura2">Ventajas</a></li>
 								</ul>
 							  </li>
 							  <li><a>CSS&raquo;</a>
 								<ul>
-								  <li><a href="#">Lectura 1</a></li>
-								  <li><a href="#">Lectura 2</a></li>
+								  <li><a href="lectura3.html#lectura1">¿Que es?</a></li>
+								  <li><a href="lectura3.html#lectura2">Ventajas</a></li>
 								</ul>
 							  </li>								  
 							</ul>
@@ -391,82 +392,74 @@
 		<section id="lectura1">
 			<div class="contenedor">
 					<br><br><br><br><br>
-					<p style="text-align: center;"><strong>Source Code Management ( Control de versiones )</strong></p>
+					<p style="text-align: center;"><strong>&iquest;QUE ES HTML?</strong></p>
 					<p>&nbsp;</p>
-					<p style="text-align: justify;">Se llama control de versiones a la gestión de los diversos cambios que se realizan sobre los elementos de algún producto o una configuración del mismo. Una versión, revisión o edición de un producto, es el estado en el que se encuentra el mismo en un momento dado de su desarrollo o modificación. Aunque un sistema de control de versiones puede realizarse de forma manual, es muy aconsejable disponer de herramientas que faciliten esta gestión dando lugar a los llamados sistemas de control de versiones o VCS (del inglés Version Control System). Estos sistemas facilitan la administración de las distintas versiones de cada producto desarrollado, así como las posibles especializaciones realizadas (por ejemplo, para algún cliente específico). Ejemplos de este tipo de herramientas son entre otros: CVS, Subversion, SourceSafe, ClearCase, Darcs, Bazaar, Plastic SCM, Git, SCCS, Mercurial, Perforce.</p>
-					<center><img src = "img/cvs.jpg"></center>
-					<p style="text-align: left;"><strong>Tipos</strong></p>
-					
-					<p style="text-align: justify;"><strong>Locales:</strong> Un método de control de versiones, usado por muchas personas, es copiar los archivos a otro directorio (quizás indicando la fecha y hora en que lo hicieron, si son ingeniosos). Este método es muy común porque es muy sencillo, pero también es tremendamente propenso a errores. Es fácil olvidar en qué directorio te encuentras y guardar accidentalmente en el archivo equivocado o sobrescribir archivos que no querías. Para afrontar este problema los programadores desarrollaron hace tiempo VCS locales que contenían una simple base de datos, en la que se llevaba el registro de todos los cambios realizados a los archivos.</p>
-					<center><img src = "img/svc_local.png"></center>
-					<p style="text-align: justify;">Una de las herramientas de control de versiones más popular fue un sistema llamado RCS, que todavía podemos encontrar en muchas de las computadoras actuales. Incluso el famoso sistema operativo Mac OS X incluye el comando rcs cuando instalas las herramientas de desarrollo. Esta herramienta funciona guardando conjuntos de parches (es decir, las diferencias entre archivos) en un formato especial en disco, y es capaz de recrear cómo era un archivo en cualquier momento a partir de dichos parches. </p>
+					<p style="text-align: justify;">HTML (HyperText Markup Language) es un lenguaje de marcas usado, de manera predominante, para la elaboración de páginas web. El lenguaje HTML es utilizado en forma de texto para describir y crear la estructura de estas páginas, tanto por programas, que traducen un diseño de página en código HTML, como por parte de las personas de manera directa.</p>
+					<p style="text-align: justify;">Este lenguaje es un estándar reconocido mundialmente y cuyas normas vienen dadas por el World Wide Web Consortium o W3C - consorcio internacional que produce recomendaciones para la World Wide Web -, lo que hace que una misma página HTML sea visualizada de forma similar en diferentes navegadores y sistemas operativos.</p>
+					<center><img src = "img/html.jpg"></center>
+					<p style="text-align: left;"><strong>ESQUEMA DE PÁGINAS HTML</strong></p>
 
-					<p style="text-align: justify;"><strong>Centralizados:</strong>El siguiente gran problema con el que se encuentran las personas es que necesitan colaborar con desarrolladores en otros sistemas. Los sistemas de Control de Versiones Centralizados (CVCS por sus siglas en inglés) fueron desarrollados para solucionar este problema. Estos sistemas, como CVS, Subversion y Perforce, tienen un único servidor que contiene todos los archivos versionados y varios clientes que descargan los archivos desde ese lugar central. Este ha sido el estándar para el control de versiones por muchos años..</p>
-					<center><img src = "img/centralized.png"></center>
-					<p style="text-align: justify;">Esta configuración ofrece muchas ventajas, especialmente frente a VCS locales. Por ejemplo, todas las personas saben hasta cierto punto en qué están trabajando los otros colaboradores del proyecto. Los administradores tienen control detallado sobre qué puede hacer cada usuario, y es mucho más fácil administrar un CVCS que tener que lidiar con bases de datos locales en cada cliente.</p>
-					<p style="text-align: justify;">Sin embargo, esta configuración también tiene serias desventajas. La más obvia es el punto único de fallo que representa el servidor centralizado. Si ese servidor se cae durante una hora, entonces durante esa hora nadie podrá colaborar o guardar cambios en archivos en los que hayan estado trabajando. Si el disco duro en el que se encuentra la base de datos central se corrompe, y no se han realizado copias de seguridad adecuadamente, se perderá toda la información del proyecto, con excepción de las copias instantáneas que las personas tengan en sus máquinas locales. Los VCS locales sufren de este mismo problema: Cuando tienes toda la historia del proyecto en un mismo lugar, te arriesgas a perderlo todo.</p>
+					<p style="text-align: justify;"><strong>Cabecera:</strong>O tambien head, este incluye información sobre dicha página (título, idioma, hojas de estilos) - todo lo que el usuario no ve, a excepción del título.</p>
+
+					<p style="text-align: justify;"><strong>Cuerpo:</strong>O tambien body, este incluye todos sus contenidos (párrafos de texto, imágenes) - todo lo que ve el usuario.</p>
+					<center><img src = "img/estructura.png"></center>
+					<p style="text-align: justify;">Si guardásemos este código HTML con un editor de texto sin formato y la extensión .html, y lo abriésemos con cualquier navegador, esto sería lo que veríamos:</p>
+					<center><img src = "img/html_intro_example.png"></center>
+					<p style="text-align: justify;">En este ejemplo anterior, hemos utilizado los tags html, head y body, las tres etiquetas principales de un documento HTML.</p>
+					<p style="text-align: justify;"><strong>html:</strong>es el primer y último tag  de un documento HTML, lo que significa que ninguna etiqueta o contenido debe colocarse antes o después de éstas (a excepción del doctype).</p>
+
+					<p style="text-align: justify;"><strong>head:</strong>delimita la parte de la cabecera del documento y contiene información sobre éste que no se muestran al usuario (a excepción del tag title que muestra el título de la página en la parte superior izquierda de la ventana del navegador).</p>
+					
+					<p style="text-align: justify;"><strong>body:</strong>delimita el cuerpo del documento HTML y encierra todos sus contenidos visibles.</p>
+
 					<p style="text-align: justify;"> </p>
 					
-					<p style="text-align: justify;"><strong>Distribuidos:</strong> Los sistemas de Control de Versiones Distribuidos (DVCS por sus siglas en inglés) ofrecen soluciones para los problemas que han sido mencionados. En un DVCS (como Git, Mercurial, Bazaar o Darcs), los clientes no solo descargan la última copia instantánea de los archivos, sino que se replica completamente el repositorio. De esta manera, si un servidor deja de funcionar y estos sistemas estaban colaborando a través de él, cualquiera de los repositorios disponibles en los clientes puede ser copiado al servidor con el fin de restaurarlo. Cada clon es realmente una copia completa de todos los datos.</p>
-					<center><img src = "img/distributed.png"></center>
-					<p style="text-align: justify;">Además, muchos de estos sistemas se encargan de manejar numerosos repositorios remotos con los cuales pueden trabajar, de tal forma que puedes colaborar simultáneamente con diferentes grupos de personas en distintas maneras dentro del mismo proyecto. Esto permite establecer varios flujos de trabajo que no son posibles en sistemas centralizados, como pueden ser los modelos jerárquicos.</p>
 					<br>			
 			</div>
 		</section>
 		<section id="lectura2"
 			<div class="contenedor">
 				<br><br><br><br><br>
-				<p style="text-align: center;"><strong>&iquest;QUE ES GIT?</strong></p>
-				<p style="text-align: justify;"> Git es un sistema de control de versiones distribuido, en donde vamos a poder controlar todos los cambios que se hacen en nuestra aplicación y en nuestro código y vamos a tener control absoluto de todo lo que pasa en el código, pudiendo volver atrás en el tiempo, pudiendo abrir diferentes ramas de desarrollo, etc.<p>				
-				<p style="text-align: justify;"> Vamos a poder trabajar en equipo de una manera muy sencilla y optimizada, de forma que si tenemos dos o tres personas trabajando en ciertas funcionalidades del proyecto y nosotros podemos estar trabajando en nuestra parte del código. Cuando acabamos de desarrollar nuestro código, utilizamos Git para mezclar los cambios con los otros compañeros. De forma que el código se mezcla de manera perfecta sin generar ningún tipo de fallo y de forma rápida. También nos va a proporcionar un listado de los cambios(commits) y podemos volver atrás en el tiempo a cualquiera de esos cambios o commits.</p>
-				<center><img src = "img/git.png"></center>
-				<p style="text-align: left;"> Algunas de las características más importantes de Git son:</p>
-				<p style="text-align: left;">	- Rapidez en la gestión de ramas, debido a que Git nos dice que un cambio será fusionado mucho más frecuentemente de lo que se escribe originalmente. </p>
-				<p style="text-align: left;">	- Gestión distribuida; Los cambios se importan como ramas adicionales y pueden ser fusionados de la misma manera como se hace en la rama local. </p>
-				<p style="text-align: left;">	- Gestión eficiente de proyectos grandes. </p>
-				<p style="text-align: left;">	- Realmacenamiento periódico en paquetes. </p>
-				<p style="text-align: left;"><strong>Comandos basicos</strong></p>
+				<p style="text-align: center;"><strong>&iquest;QUE ES HTML5?</strong></p>
+				<p style="text-align: justify;">HTML5 (HyperText Markup Language, versión 5) es la quinta revisión del lenguaje HTML. Esta nueva versión (aún en desarrollo), y en conjunto con CSS3, define los nuevos estándares de desarrollo web, rediseñando el código para resolver problemas y actualizándolo así a nuevas necesidades. No se limita solo a crear nuevas etiquetas o atributos, sino que incorpora muchas características nuevas y proporciona una plataforma de desarrollo de complejas aplicaciones web (mediante los APIs).<p>				
+				<center><img src = "img/html5.jpg"></center>
+				<p style="text-align: left;"> Algunas de las nuevas características de HTML5 serían:</p>
+				<p style="text-align: left;">	- Nuevas etiquetas semánticas para estructurar los documentos HTML, destinadas a remplazar la necesidad de tener una etiqueta &lt;div&gt; que identifique cada bloque de la página. </p>
+				<p style="text-align: left;">	- Los nuevos elementos multimedia como &lt;audio&gt; y &lt;video&gt;. &lt;/p&gt;
+				<p style="text-align: left;">	- La integración de gráficos vectoriales escalables (SVG) en sustitución de los genéricos &lt;object&gt;, y un nuevo elemento &lt;canvas&gt; que nos permite dibujar en él. </p>
+				<p style="text-align: left;">	- El cambio, redefinición o estandarización de algunos elementos, como &lt;a&gt;, &lt;cite&gt; o &lt;menu&gt;. </p>
+				<p style="text-align: left;">	- MathML para fórmulas matemáticas. </p>
+				<p style="text-align: left;">	- Almacenamiento local en el lado del cliente. </p>
+				
 				<br>
-				<p style="text-align: left;"><em>git init</em></p>
-				<p style="text-align: left;">Iniciar un repositorio vacío en unas carpeta específica.</p>
+				<p style="text-align: justify;">En conclusion se puede pensar en HTML sólo como nuevas etiquetas y geolocalización. Pero esta no es más que una pequeña parte del estándar que define HTML5. La especificación de HTML5 define también cómo esas etiquetas interactúan con JavaScript, a través del Modelo de Objetos de Documento (DOM). HTML5 no es únicamente definir una etiqueta como &lt;video&gt;, también existe su correspondiente API para objetos de vídeo en el DOM. Se puede utilizar esta API para detectar el soporte para diferentes formatos de vídeo, reproducir el vídeo, hacer una pausa, silenciar el audio, realizar un seguimiento de la cantidad de vídeo que se ha descargado, y todo lo que necesita para crear una completa experiencia de usuario alrededor de la etiqueta en sí.</p>
 				<br>
-				<p style="text-align: left;"><em>git add “nombre_de_archivo”</em></p>
-				<p style="text-align: left;">Añadir un archivo especifico.</p>
-				<br>
-				<p style="text-align: left;"><em>git add .</em></p>
-				<p style="text-align: left;">Añadir todos los archivos del directorio</p>
-				<br>
-				<p style="text-align: left;"><em>git commit –am “mensaje”</em></p>
-				<p style="text-align: left;">Confirmar los cambios realizados. El “mensaje” generalmente se usa para asociar al commit una breve descripción de los cambios realizados.</p>
-				<br>
-				<p style="text-align: left;"><em>git revert “hash_commit"</em></p>
-				<p style="text-align: left;">Revertir el commit identificado por "hash_commit"</p>
-				<br>
-				<p style="text-align: left;"><em>git push origin “nombre rama”</em></p>
-				<p style="text-align: left;">Subir la rama(branch) “nombre_rama” al servidor remoto.</p>
-				<br>
-				<p style="text-align: left;"><em>git status</em></p>
-				<p style="text-align: left;">Mostrar el estado actual de la rama(branch), como los cambios que hay sin hacer commit.</p>
-				<br>
+				
 			</div>
 		</section>
 		<section id="lectura3"
 			<div class="contenedor">
 			
 				<br><br><br><br><br>
-				<p style="text-align: center;"><strong>&iquest;Qué es GitHub y para qué se utiliza?</strong></p>}
-				<center><img src = "img/gg.jpg"></center>
-				<p style="text-align: justify;">GitHub es un sistema de gestión de proyectos y control de versiones de código, así como una plataforma de red social diseñada para desarrolladores. ¿Pero para qué se usa GitHub? Bueno, en general, permite trabajar en colaboración con otras personas de todo el mundo, planificar proyectos y realizar un seguimiento del trabajo. Github en pocas palabras se encarga de convertir lo que es una linea de comandos (GIT) en la red social mas grande para desarrolladores</p>
-				<p style="text-align: left;"><strong><em>Repository</em></strong></p>
-				<p style="text-align: justify;">Un repositorio o “repo” es un directorio donde se almacenan los archivos de tu proyecto. Puede estar ubicado en el almacenamiento de GitHub o en un repositorio local en tu computadora. Puedes almacenar archivos de código, imágenes, audios o todo lo relacionado con el proyecto en el repositorio.</p>
-				<p style="text-align: left;"><strong><em>Branch</em></strong></p>
-				<p style="text-align: justify;">Branch, que se traduce como rama, es una copia de tu repositorio. Puedes utilizar la rama cuando quieras hacer un desarrollo de forma aislada. Trabajar en una rama no afectará el repositorio central u otras ramas. Si has completado el trabajo, puedes combinar tu rama con otras ramas y con el repositorio central mediante una pull request.</p>
-				<p style="text-align: left;"><strong><em>Pull Request</em></strong></p>
-				<p style="text-align: justify;">Pull request significa que les informas a los demás que has enviado al repositorio principal el cambio que hiciste en una rama. Los colaboradores del repositorio pueden aceptar o rechazar una pull request. Una vez abierta, puedes discutir y revisar tu trabajo con los colaboradores.</p>
+				<p style="text-align: center;"><strong>Ventajas de usar HTML5</strong></p>}
+				<p style="text-align: left;"><strong><em>Es gratuito</em></strong></p>
+				<p style="text-align: justify;">No necesitas ningún tipo de programa especial para empezar a programar en HTML5, incluso puedes hacerlo en un bloc de notas, guardar el documento como HTML y podrás visualizarlo desde cualquier navegador. Sin embargo, aunque esto es posible no es realmente recomendable pues en un bloc de notas no separa las etiquetas del contenido y puede ser más complicado realizar correcciones.</p>
+				
+				<p style="text-align: left;"><strong><em>Código más ordenado</em></strong></p>
+				<p style="text-align: justify;">Debido a la adición de nuevas etiquetas que ayudan a nombrar partes de la estructura básica de toda página web (como &lt;header&gt;, por ejemplo), así como la eliminación de ciertas etiquetas, el código HTML se puede separar fácilmente entre etiquetas y contenido, permitiendo así que el desarrollador pueda trabajar de manera más efectiva y detectar errores de manera más rápida. Las etiquetas son claras y descriptivas, de modo que el desarrollador puede comenzar a codificar sin ningún problema. Es realmente un lenguaje bastante sencillo de comprender en esta nueva versión.</p>
+				
+				<p style="text-align: left;"><strong><em>Compatibilidad en navegadores</em></strong></p>
+				<p style="text-align: justify;">Los navegadores modernos y populares como Chrome, Firefox, Safari y Opera) soportan HTML5, es decir, sin importar qué navegador empleen tus usuarios el contenido se puede visualizar correctamente. El único problema sería considerar a usuarios que emplean navegadores más antiguos, ya que en éstos no todas las nuevas funciones y etiquetas de HTML5 están disponibles.</p>
+				<p style="text-align: justify;">Puedes verificar qué funciones de HTML5 soporta cada navegador en la página <a href="http://caniuse.com/" target="_blank">Can I use</a> y saber de antemano si hay alguna función de tu sitio web que podría resultar ser un problema en estas versiones pasadas de los navegadores. También puedes hacer uso de herramientas como <a href="http://modernizr.com/" target="_blank">Modernizr</a>, que te permiten determinar la compatibilidad de tu página en diversos navegadores.</p>
+				
+				<p style="text-align: left;"><strong><em>Almacenamiento mejorado</em></strong></p>
+				<p style="text-align: justify;">Otra nueva adición en HTML5 ha sido el almacenamiento local que se define a sí mismo como “mejor que las cookies” pues la información nunca se transfiere al servidor. De esta manera, la información se mantiene segura. Asimismo, esta nueva característica permite que la información se mantenga almacenada incluso después de haber cerrado el navegador y como funciona desde el lado de cliente, la información se mantiene a salvo incluso si el usuario decide borrar sus cookies.</p>
+				
+				<p style="text-align: left;"><strong><em>HMTL5 y el diseño adaptativo</em></strong></p>
+				<p style="text-align: justify;">HTML5 es compatible con los navegadores móviles, de modo que cada página realizada en HTML5 que se ve en ordenadores, también se puede adaptar a los dispositivos móviles. Esta especificación para móviles puedes hacerla desde el mismo documento HTML o puedes emplear una framework especializada para mejorar tu productividad.</p>
+				<p style="text-align: justify;">Esta característica del lenguaje HTML5 es probablemente una de las más útiles, pues se puede acceder a cualquier página o aplicación web desde un dispositivo móvil y permite que la experiencia sea igual de buena que al visitar una página web en ordenadores.</p>
 				<br><br><br>
-				<p style="text-align: center;"><strong>Coclusion</strong></p>
-				<p style="text-align: justify;">Git y Github son herramientas fundamentales para el proceso de desarrollo de tu proyecto o producto. Como hemos visto podemos usar otras alternativas pero no debememos de suprimir estas herrameintas que nos ayudarán a una mejor gestión del código.</p>
-		</div>
+			</div>
 		</section>
 		<p>Referencias</p>
 		<br>
